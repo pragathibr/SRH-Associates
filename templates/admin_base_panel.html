@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SRH Associates</title>
+	<link rel="icon" href="Images/SRH.png" type="image/gif">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light top-bar">
+    <a class="navbar-brand" href="home.html"><img src="Images/Logo.png" style="width: 100px; height: 100px;"></a>
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-4">
+                <button class="btn mb-2" type="button" data-toggle="modal" data-target="#create-admin">Create admin</button>
+            </li>
+            <li class="nav-item mr-4">
+                <button class="btn mb-2" type="button" data-toggle="modal" data-target="#reply">
+                    <a style="color: #000; text-decoration: none;" href="home.html">Logout</a>
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<hr>
+
+<div class="modal fade" role="dialog" id="create-admin">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Create Admin</h3>
+                <button type="button" class="close" data-dismiss="modal">&times</button>
+            </div>
+            <div class="modal-body">
+                <form action="admin_creation.php" method="post">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-success" value="Create" name="create_admin">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+    <a class="navbar-brand">
+        <h1>SRH Admin Panel</h1>
+    </a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="admin_user_query_we_teach_panel.html">We teach</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="admin_notification_panel.html">Notification</a>
+        </li>
+    </ul>
+</nav>
+<hr>
+
+<table id="contact" class="table table-striped">
+    <tr>
+        <th>Serial</th>
+        <th>Post Date</th>
+        <th>Post Time</th>
+        <th>Name</th>
+        <th>Contact</th>
+        <th>Email</th>
+        <th>Query</th>
+        <th>Action</th>
+        <th>Replied</th>
+    </tr>
+    <tbody>
+        
+    </tbody>
+    
+</body>
+
+<footer>
+    <script type="text/javascript" src="javascript/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap.js"></script>
+</footer>
+</html>
+
